@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prasti pozhalusta</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff9ec4, #ffdde1);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff007f;
+      text-shadow: 0 0 15px rgba(255, 0, 127, 0.7),
+                   0 0 30px rgba(255, 0, 127, 0.5),
+                   0 0 45px rgba(255, 0, 127, 0.3);
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { transform: scale(1); opacity: 1; }
+      to { transform: scale(1.1); opacity: 0.9; }
+    }
+
+    svg {
+      width: 200px;
+      height: 200px;
+      margin-top: 30px;
+      animation: heartbeat 1.5s infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      25% { transform: scale(1.2); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Prasti pozhalusta 💕</h1>
+
+  <!-- SVG сердечко -->
+  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <path d="M471.7 73.6c-54.5-46.4-136-38.9-186.4 13.7L256 118.7l-29.3-31.4C176.3 34.7 94.8 27.2 40.3 73.6c-62.8 53.5-66.1 149.8-9.9 207.2l193.5 201.4c12.5 13 29.1 19.4 45.7 19.4s33.2-6.5 45.7-19.4l193.5-201.4c56.2-57.4 52.9-153.7-9.1-207.2z"
+          fill="url(#grad)"/>
+    <defs>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#ff4da6; stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#ff99cc; stop-opacity:1" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+</body>
+</html>
